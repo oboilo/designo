@@ -1,0 +1,23 @@
+.padding-section-small {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.padding-section-medium {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.container {
+    /* background: #c92a2a; */
+    max-width: 1280px;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

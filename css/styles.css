@@ -1,68 +1,213 @@
+@import url(/css/links-and-buttons.css);
+@import url(/css/menu.css);
+@import url(/css/typography.css);
+@import url(/css/main.css);
+
 * {
   margin: 0;
+  box-sizing: border-box;
 }
+
 body {
   font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 400;
+  text-wrap: balance;
 }
+
+header,
+main,
+footer {
+  padding: 0 80px;
+}
+
 ul {
   list-style-type: none;
   padding-left: 0;
 }
-a {
-  text-decoration: none;
-  color: #333136;
+
+
+.padding-global {
+  padding: 2.5rem;
 }
+
+@media screen and (max-width: 600px) {
+  .padding-global {
+    padding: 1.25rem;
+  }
+}
+
 .header {
   /* background-color: blueviolet; */
 }
+
 .header .container {
-  height: 155px;
+  /* height: 155px; */
 }
-.container {
-  /* background: #c92a2a; */
-  max-width: 1110px;
-  /* margin: 0 auto; */
-  margin-left: auto;
-  margin-right: auto;
-}
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  line-height: 0;
-}
-.logo-header {
-  width: 197px;
-  height: 27px;
-}
-.menu {
-  gap: 42px;
-}
-.menu a {
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 2px;
-  text-decoration-line: none;
-  transition: text-decoration-line 0.5s ease-in-out;
-}
-.menu a:hover {
-    text-decoration-line: underline;
-}
-.header__menu {
-}
+
 .main {
   /* background-color: aqua; */
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  background: url(../assets/images/body_bg_top.png),
+    url(../assets/images/body_bg_bottom.png);
+  background-repeat: no-repeat;
+  background-position: left top 320px, right bottom 74px;
 }
-.container-bg {
+
+.container-bg {}
+
+
+/* HERO SECTION */
+
+.hero {
+  min-height: 640px;
+  border-radius: 15px;
+  padding-left: 95px;
+  padding-right: 95px;
+  background: url(../assets/images/Hero/home-mobile-phone.png),
+    url(../assets/images/hero_bg_circle.png), #e7816b;
+  background-repeat: no-repeat;
+  background-position: right bottom, right center;
 }
+
+.hero__content {
+  max-width: 540px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 32px;
+  /* padding: 72px 0 32px 0; */
+  /* height: 100%; */
+}
+
+/* PRODUCTS */
+.products-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 2rem;
+}
+
+.home_products-cards-column {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  /* justify-content: center; */
+  gap: 2rem;
+}
+
+.home_products-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7816b;
+  /* width: 100%; */
+  /* height: 100%; */
+  padding: 6rem 2rem;
+  border-radius: 1rem;
+  color: #FFF;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.home_products-card h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 2px;
+}
+
+.home_products-card a {
+  color: #FFF;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.link-arrow {
+  fill: #E7816B;
+
+}
+
+.home_products-webdesign {
+  background: url(/assets/images/products/webdesign.png);
+}
+
+.home_products-appdesign {
+  background: url(/assets/images/products/appdesign.jpg);
+}
+
+.home_products-graphicdesign {
+  background: url(/assets/images/products/graphicdesign.jpg);
+}
+
+/* HOME FEATURES WRAPPER */
+
+/* 
+      <div class="home_features-wrapper">
+        <div class="home_features-card">
+          <img class="home_features-image" src="/assets/images/Features/passionate.png" alt="">
+          <h3 class="home_features-heading">PASSIONATE</h3>
+          <p class="home_features-paragraph">Each project starts with an in-depth brand research to ensure we only
+ */
+
+.home_features-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 32px;
+}
+
+.home_features-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home_features-card img {
+  width: 202px;
+  height: 202px;
+  object-fit: scale-down;
+  padding-bottom: 48px;
+}
+
+.home_features-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+
+.home_features-card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 162.5%;
+}
+
+/* FOOTER */
+
 .footer {
   background-color: #1d1c1e;
+  margin-top: 4rem;
+  color: #fff;
 }
+
+.cta_banner {
+  background-color: #E7816B;
+  padding: 3rem;
+}
+
+.cta_banner-content {}
