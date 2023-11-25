@@ -3,6 +3,15 @@
 @import url(/css/typography.css);
 @import url(/css/main.css);
 
+:root {
+  --peach: #E7816B;
+  --light-peach: #FFAD9B;
+  --black: #1D1C1E;
+  --dark-grey: #333136;
+  --white: #FFFFFF;
+  --light-grey: #F1F3F5;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -67,7 +76,7 @@ ul {
   padding-left: 95px;
   padding-right: 95px;
   background: url(../assets/images/Hero/home-mobile-phone.png),
-    url(../assets/images/hero_bg_circle.png), #e7816b;
+    url(../assets/images/hero_bg_circle.png), var(--peach);
   background-repeat: no-repeat;
   background-position: right bottom, right center;
 }
@@ -86,7 +95,9 @@ ul {
 /* PRODUCTS */
 .products-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+
   width: 100%;
   gap: 2rem;
 }
@@ -104,9 +115,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #e7816b;
-  /* width: 100%; */
-  /* height: 100%; */
+  text-align: center;
   padding: 6rem 2rem;
   border-radius: 1rem;
   color: #FFF;
@@ -124,7 +133,7 @@ ul {
 }
 
 .home_products-card a {
-  color: #FFF;
+  color: var(--white);
   font-size: 1rem;
   display: flex;
   flex-direction: row;
@@ -134,7 +143,7 @@ ul {
 }
 
 .link-arrow {
-  fill: #E7816B;
+  fill: var(--peach);
 
 }
 
@@ -150,21 +159,21 @@ ul {
   background: url(/assets/images/products/graphicdesign.jpg);
 }
 
-/* HOME FEATURES WRAPPER */
+.home_products-card {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-/* 
-      <div class="home_features-wrapper">
-        <div class="home_features-card">
-          <img class="home_features-image" src="/assets/images/Features/passionate.png" alt="">
-          <h3 class="home_features-heading">PASSIONATE</h3>
-          <p class="home_features-paragraph">Each project starts with an in-depth brand research to ensure we only
- */
+/* HOME FEATURES WRAPPER */
 
 .home_features-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   width: 100%;
   gap: 32px;
+  justify-items: center;
 }
 
 .home_features-card {
@@ -173,6 +182,8 @@ ul {
   align-items: center;
   justify-content: center;
   text-align: center;
+  max-width: 22rem;
+
 }
 
 .home_features-card img {
@@ -183,31 +194,86 @@ ul {
 }
 
 .home_features-card h3 {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 130%;
-  letter-spacing: 5px;
-  text-transform: uppercase;
   padding-bottom: 32px;
-}
-
-.home_features-card p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 162.5%;
 }
 
 /* FOOTER */
 
 .footer {
-  background-color: #1d1c1e;
-  margin-top: 4rem;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
+  /* padding-bottom: 72px; */
+  position: relative;
+  margin-top: 8rem;
+  padding: 6rem 80px 4rem 80px;
 }
+
+.footer_container {}
 
 .cta_banner {
-  background-color: #E7816B;
+  background-color: var(--peach);
   padding: 3rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: -10rem;
+  width: calc(100% - 160px);
+  max-width: 1280px;
+  left: calc((100vw - 1280px) / 2);
+  /* Formula to position from left */
+  right: calc((100vw - 1280px) / 2);
+  /* Formula to position from right */
 }
 
-.cta_banner-content {}
+.cta_banner-content {
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer a {
+  color: var(--white);
+}
+
+.footer_top-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer_divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--white);
+  opacity: .1;
+}
+
+.footer_bottom-wrapper {
+  opacity: .75;
+  margin-top: 31px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer_bottom-column {
+  /* opacity: .5; */
+  font-size: 16px;
+  line-height: 26px;
+  /* 162.5% */
+}
+
+.footer_text-bold {
+  font-weight: 700;
+}
+
+.footer_text-regular {
+  font-weight: 400;
+}
+
+.footer_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .5rem;
+  margin-top: auto;
+  margin-left: auto;
+}

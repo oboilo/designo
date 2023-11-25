@@ -1,14 +1,76 @@
-h1 {
+h1,
+.h1 {
     font-size: 48px;
     font-style: normal;
     font-weight: 500;
-    line-height: 120%;
+    line-height: 48px;
+    /* 100% */
 }
 
-p {
+h2,
+.h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 100% */
+}
 
+h2.h2-is-upper {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    /* 120% */
+    letter-spacing: 2px;
+}
+
+h3,
+.h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 130% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+p,
+.body-text {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 162.5%;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+/* Text Color */
+
+.text-color-peach {
+    color: var(--peach);
+}
+
+.text-color-light-peach {
+    color: var(--light-peach);
+}
+
+.text-color-white {
+    color: var(--white);
+}
+
+.text-color-light-grey {
+    color: var(--light-grey);
+}
+
+.text-color-black {
+    color: var(--black);
+}
+
+.text-color-dark-grey {
+    color: var(--dark-grey);
+}
+
+.is-uppercase {
+    text-transform: uppercase;
 }

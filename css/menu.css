@@ -1,11 +1,26 @@
 .logo {
     line-height: 0;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.logo-header {
+.logo_oval {
+    width: 24px;
+    height: 24px;
+}
+
+.logo_designo {
+    width: 152.316px;
+    height: 20.544px;
+}
+
+/* .logo-header {
     width: 197px;
     height: 27px;
-}
+} */
 
 .menu {
     gap: 42px;

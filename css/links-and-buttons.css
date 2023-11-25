@@ -1,5 +1,13 @@
 /* BUTTONS */
 
+/* Reset buttons */
+button,
+.button,
+a {
+    box-shadow: none;
+    border: none;
+}
+
 a[class*="button"],
 button[class*="button"] {
     display: inline-flex;
@@ -21,30 +29,32 @@ button[class*="button"] {
 }
 
 .button-primary {
-    background: #fff;
-    color: #333136;
+    background: var(--white);
+    color: var(--dark-grey);
 }
 
 .button-primary:hover {
-    background: #FFAD9B;
-    color: #fff;
+    background: var(--light-peach);
+    color: var(--white);
+    cursor: pointer;
 }
 
 .button-secondary {
-    background: #E7816B;
-    color: #fff;
+    background: var(--peach);
+    color: var(--white);
 }
 
 .button-secondary:hover {
-    background: #FFAD9B;
-    color: #fff;
+    background: var(--light-peach);
+    color: var(--white);
+    cursor: pointer;
 }
 
 /* LINKS */
 
 a {
     text-decoration: none;
-    color: #333136;
+    color: var(--dark-grey);
 }
 
 /* ADD TO LINK ON SIBLING HOVER OPACITY .5 */
