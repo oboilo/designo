@@ -17,26 +17,28 @@
     height: 20.544px;
 }
 
-/* .logo-header {
-    width: 197px;
-    height: 27px;
-} */
-
-.menu {
-    gap: 42px;
-}
-
-.menu a {
+.menu ul a,
+footer ul a {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 2px;
     text-decoration-line: none;
-    transition: text-decoration-line 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-.menu a:hover {
+.menu ul a:hover {
     text-decoration-line: underline;
 }
 
-.header__menu {}
+.nav_menu {
+    gap: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .nav_menu {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {}

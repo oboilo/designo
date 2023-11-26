@@ -6,6 +6,8 @@ button,
 a {
     box-shadow: none;
     border: none;
+    transition: all .5s ease-in-out;
+    color: var(--white);
 }
 
 a[class*="button"],
@@ -25,7 +27,6 @@ button[class*="button"] {
     line-height: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
-    transition: opacity .3s ease-in-out;
 }
 
 .button-primary {
@@ -55,6 +56,20 @@ button[class*="button"] {
 a {
     text-decoration: none;
     color: var(--dark-grey);
+}
+
+.link-arrow svg {
+    fill: var(--peach);
+}
+
+.link-arrow {
+    transition: all 0.15s ease-in-out;
+}
+
+.link-arrow:hover {
+    cursor: pointer;
+    /* transform: translate(0, -4px); */
+    gap: 1rem;
 }
 
 /* ADD TO LINK ON SIBLING HOVER OPACITY .5 */
