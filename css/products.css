@@ -28,16 +28,22 @@
 .products_portfolio-card {
     display: flex;
     flex-direction: column;
-    max-width: 350px;
+    gap: 0;
+    /* max-width: 350px; */
     border-radius: 1rem;
     overflow: hidden;
 }
 
-.products_portfolio-image {
-    width: 100%;
+.products_portfolio-image-wrapper {
     height: 320px;
 
-    object-position: top top;
+}
+
+.products_portfolio-image {
+    width: 100%;
+    height: 100%;
+
+    object-position: 0% 0%;
     object-fit: cover;
 }
 
@@ -57,18 +63,22 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .products_hero-banner {
+        background-size: cover;
+    }
+
     .products_portfolio-wrapper {
         /* grid-template-columns: 1fr; */
         display: flex;
         flex-direction: column;
-
+        width: 100%;
     }
 
     .products_portfolio-card {
         width: 100%;
         max-width: none;
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 350px 1.5fr;
     }
 
     .products_portfolio-content {
@@ -84,7 +94,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .products_portfolio-card {
         display: flex;
         flex-direction: column;

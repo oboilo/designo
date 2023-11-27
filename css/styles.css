@@ -368,10 +368,13 @@ ul {
     text-align: center;
     padding: 2rem 1.25rem;
     background-size: cover;
+    width: calc(100% - 60px);
   }
 
   .footer {
     padding-top: 12rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .footer_top-wrapper {
