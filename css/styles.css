@@ -2,6 +2,7 @@
 @import url(/css/menu.css);
 @import url(/css/typography.css);
 @import url(/css/main.css);
+@import url(/css/cards.css);
 
 :root {
   --peach: #E7816B;
@@ -212,72 +213,6 @@ ul {
   .products-wrapper {
     display: flex;
     flex-direction: column;
-  }
-}
-
-/* HOME FEATURES WRAPPER */
-.home_features-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  gap: 32px;
-  justify-items: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.home_features-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  max-width: 22rem;
-  gap: 48px;
-}
-
-.home_features-content {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.home_features-card img {
-  width: 202px;
-  height: 202px;
-  object-fit: scale-down;
-}
-
-@media screen and (max-width: 800px) {
-  .home_features-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .home_features-card {
-    flex-direction: row;
-    gap: 48px;
-    max-width: none;
-    align-items: center;
-    text-align: left;
-  }
-
-  .home_features-content {
-    gap: 1rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .home_features-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-  }
-
-  .home_features-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 }
 

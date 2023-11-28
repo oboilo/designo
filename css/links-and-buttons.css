@@ -6,7 +6,7 @@ button,
 a {
     box-shadow: none;
     border: none;
-    transition: all .5s ease-in-out;
+    transition: all .15s ease;
     color: var(--white);
 }
 
