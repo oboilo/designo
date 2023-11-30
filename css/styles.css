@@ -348,3 +348,47 @@ ul {
     flex-direction: column;
   }
 }
+
+/* About Page */
+.card-large.is-peach {
+  min-height: 500px;
+
+  background: url(../assets/images/hero_bg_circle.png), var(--peach);
+  background-repeat: no-repeat;
+  background-position: left bottom, right center;
+
+  color: var(--white);
+  padding: auto;
+}
+
+
+/* Contact */
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: -2rem;
+  width: 100%;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  padding: 12px 1rem;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--white);
+  opacity: .5;
+}
+
+.form_button {
+  margin-left: auto;
+}

@@ -3,15 +3,17 @@
 /* Reset buttons */
 button,
 .button,
-a {
+a,
+input[type=submit] {
     box-shadow: none;
     border: none;
     transition: all .15s ease;
-    color: var(--white);
+    /* color: var(--white); */
 }
 
 a[class*="button"],
-button[class*="button"] {
+button[class*="button"],
+input[type=submit] {
     display: inline-flex;
     padding: 18px 24px;
     flex-direction: column;
