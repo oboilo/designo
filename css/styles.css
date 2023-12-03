@@ -253,6 +253,10 @@ ul {
   color: var(--white);
 }
 
+.cta_banner a {
+  color: initial;
+}
+
 .footer_top-wrapper {
   padding-top: 2rem;
   padding-bottom: 2rem;

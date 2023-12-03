@@ -75,7 +75,7 @@
 .card-large {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
-    max-height: 640px;
+    /* max-height: 640px; */
 }
 
 .card-large.is-revert {
@@ -98,7 +98,7 @@
     align-items: flex-start;
     text-align: left;
     justify-content: center;
-    padding: 2.5rem;
+    padding: 4rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -110,7 +110,7 @@
 
     .card_large-image {
         width: 100%;
-        height: auto;
+        height: 100%;
         max-height: 400px;
         object-fit: cover;
         object-position: center 90%;
@@ -124,6 +124,10 @@
 
     .card-large.is-revert .card_large-image {
         object-position: center 50%;
+    }
+
+    .card_large-content {
+        padding: 2.5rem;
     }
 }
 
