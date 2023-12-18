@@ -11,10 +11,11 @@
 }
 
 .features-card {
-    background-color: #141414;
+    /* background-color: #141414; */
     border-radius: 1rem;
     padding-inline: 1rem;
     height: 100%;
+    max-width: 24rem;
 }
 
 .features-content {
