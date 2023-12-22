@@ -26,7 +26,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse flex-grow-0" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav-links" style="--bs-scroll-height: 200px;">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
@@ -39,14 +39,8 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/locations.html">Locations</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/contact.html">Contact</a>
-          </li>
-          <!-- <li class="nav-item d-none">
-            <a class="nav-link" href="#">Our Company</a>
-          </li> -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Products
             </a>
             <ul class="dropdown-menu">
@@ -56,6 +50,12 @@
               <!-- <li><hr class="dropdown-divider"></li> -->
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact.html">Contact</a>
+          </li>
+          <!-- <li class="nav-item d-none">
+            <a class="nav-link" href="#">Our Company</a>
+          </li> -->
           <!-- <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Link</a>
           </li> -->
@@ -262,16 +262,16 @@
 
     <div class="container footer_container">
       <div class="footer_content w-100">
-        <div class="row d-flex flex-row justify-content-between">
+        <div class="row d-flex flex-row justify-content-between align-items-center">
           <a class="col logo" href="/">
             <img class="logo_oval" src="/assets/Logo/logo-oval-2-x.png" alt="logo company Designo" />
             <img class="logo_designo" src="/assets/Logo/logo-designo-white.svg" alt="logo company Designo" />
           </a>
           <nav class="col">
-            <ul class="d-flex flex-row gap-3 list-unstyled justify-content-end">
-              <li><a href="/about.html">Our company</a></li>
-              <li><a href="/locations.html">Locations</a></li>
-              <li><a href="/contact.html">Contact</a></li>
+            <ul class="d-flex flex-row gap-3 list-unstyled justify-content-end nav-links is-footer" style="margin-left: auto !important; max-width: max-content;">
+              <li><a class="nav-link" href="/about.html">Our company</a></li>
+              <li><a class="nav-link" href="/locations.html">Locations</a></li>
+              <li><a class="nav-link" href="/contact.html">Contact</a></li>
             </ul>
           </nav>
         </div>

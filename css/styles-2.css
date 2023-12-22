@@ -133,3 +133,38 @@
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
 }
+
+/* NAVBAR */
+.navbar {
+    min-height: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.nav-link {
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333136;
+}
+
+.nav-link {
+    transition: opacity .25s ease-in-out;
+}
+
+.nav-links:hover a {
+    opacity: .25;
+}
+
+.nav-links:hover a:hover {
+    opacity: 1;
+}
+
+.nav-links.is-footer:hover a:hover {
+    color: white;
+    opacity: 1;
+}
